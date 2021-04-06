@@ -1,0 +1,178 @@
+/*
+color codes: 
+#ffe9d6
+#ff7a00
+#ff0000
+#ff9a3d
+#ffcd9e
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero {
+    background-color: #ffcd9e;
+    padding: 10px 150px 50px 150px;
+}
+
+.nav {
+    position: relative;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.nav ul li a {
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li a {
+    margin: 0 20px;
+    color: #090909;
+}
+
+.nav-links li a:hover {
+    color: #ff0000;
+}
+
+.logo {
+    width: 70%;
+    padding-left: 0;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 5px 15px;
+    background-color: #ff9a3d;
+    border-radius: 50px;
+}
+
+.cart img {
+    width: 25px;
+    margin-right: 5px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #ff7a00;
+    letter-spacing: 3px;
+}
+
+.hero-img {
+    width: 55%;
+}
+
+.btn {
+    background-color: #ff9a3d;
+    padding: 10px 45px;
+    color: #fff;
+    font-size: .8rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ff7a00;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    background-color: #090909;
+    color: #fff;
+    padding: 70px 150px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.about p {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.gadgets,
+.footer {
+    padding: 70px 150px;
+}
+
+.gadgets h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.item-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.gadgets .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items p {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.items {
+    margin-bottom: 50px;
+}
+
+.items button {
+    border-radius: 5px;
+    color: #090909;
+    font-weight: 800;
+    font-size: .7.5rem;
+    letter-spacing: -0.5px;
+}
+
+.footer {
+    background-color: #090909;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.footer p {
+    font-size: .9rem;
+}
+
+.footer .logo {
+    width: 10%;
+}
