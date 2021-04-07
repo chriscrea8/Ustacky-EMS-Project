@@ -10,32 +10,65 @@
 </head>
 
 <body>
-    <section class="hero">
+    <section id="intro" class="hero">
         <div class="nav">
             <ul>
                 <li><a href="#"><img class="logo" src="./Images/EMS.svg" alt=""></a></li>
                 <div class="nav-links">
-                    <li><a href="#">Intro</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Shop</a></li>
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#shop">Shop</a></li>
                 </div>
-                <li><a class="cart" href="#">
+                <li>
+                    <a id="open" class="cart" href="#">
                         <img src="./Images/cart.svg" alt="">
                         0
-                    </a></li>
+                    </a>
+                </li>
             </ul>
+
+            <div class="modal-container" id="modal-container">
+                <div class="modal">
+                    <ul class="item-list">
+                        <li>S/N</li>
+                        <li>Item</li>
+                        <li>Price</li>
+                        <li>Quantity</li>
+                    </ul>
+
+                    <form class="form" action="#">
+                        <input type="text" id="name" name="name" placeholder="Your Name"> <br>
+                        <input type="email" id="email" name="email" placeholder="Your Email"> <br>
+                        <input type="number" id="phone-number" placeholder="Your Phone Number"> <br>
+                    </form>
+                    <p>
+                        Total Amount to be Paid <br>
+                    </p>
+                    <p> <span><s>N</s>0 </span></p>
+                    <div class="btn-right">
+                        <a id="close" class="btn" href="#">
+                            Continue Shopping
+                        </a>
+                        <a id="checkout" class="btn checkout" href="#">
+                            Checkout
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
 
+
+
         <div class="hero-content">
-            <h1> The <br> E-Millenial <br> Store</h1>
+            <h1> The E-<br>Millenial <br> Store</h1>
             <img src="./Images/heroImage.png" alt="" class="hero-img">
         </div>
         <div class="center">
-            <button class="btn">SHOP NOW</button>
+            <a class="btn" href="#shop">SHOP NOW</a>
         </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <div>
             <p>
                 E-Millenial Store is an hypothetical online store for gadgets we believe every 'Milenial' or 'Gen-Z'
@@ -45,7 +78,7 @@
         </div>
     </section>
 
-    <section class="gadgets">
+    <section id="shop" class="gadgets">
         <h2>Our Gadgets</h2>
 
         <div class="item-container">
