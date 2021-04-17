@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMS</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery.nice-number.css">
 </head>
 
 <body>
@@ -29,22 +30,26 @@
 
             <div class="modal-container" id="modal-container">
                 <div class="modal">
-                    <ul class="item-list">
-                        <li>S/N</li>
-                        <li>Item</li>
-                        <li>Price</li>
-                        <li>Quantity</li>
-                    </ul>
+                    <div class="cart-row">
+                        <span class="cart-number cart-header cart-column">S/N</span>
+                        <span class="cart-item cart-header cart-column">Item</span>
+                        <span class="cart-price cart-header cart-column">Price</span>
+                        <span class="cart-quantity cart-header cart-column">Quantity</span>
+                    </div>
+
+                    <div class="cart-items">
+                        
+                    </div>
 
                     <form class="form" action="#">
-                        <input type="text" id="name" name="name" placeholder="Your Name"> <br>
-                        <input type="email" id="email" name="email" placeholder="Your Email"> <br>
-                        <input type="number" id="phone-number" placeholder="Your Phone Number"> <br>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required> <br>
+                        <input type="email" id="email-address" name="email" placeholder="Your Email" required> <br>
+                        <input type="text" id="phone-number" placeholder="Your Phone Number" required> <br>
                     </form>
                     <p>
                         Total Amount to be Paid <br>
                     </p>
-                    <p> <span><s>N</s>0 </span></p>
+                    <p> <span id="amount" class="cart-total-price">0 </span></p>
                     <div class="btn-right">
                         <a id="close" class="btn" href="#">
                             Continue Shopping
@@ -84,39 +89,88 @@
         <div class="item-container">
 
             <div class="items">
-                <img src="./Images/product1.png" alt="">
-                <p>Samsung TV</p>
-                <button class="btn"> ADD TO CART</button>
+                <div class="item-img-area">
+                    <img src="./Images/product1.png" alt="">
+
+                    <div class="price-overlay">
+                        <p class="product-title">Price</p>
+                        <div class="product-price"> <s>N</s>500000</div>
+                    </div>
+                </div>
+
+                <p class="shop-item-title">Samsung TV</p>
+                <button class="btn btn-add"> ADD TO CART</button>
             </div>
 
             <div class="items">
-                <img src="./Images/product2.png" alt="">
-                <p>Pixel 4a</p>
-                <button class="btn"> ADD TO CART</button>
+                <div class="item-img-area">
+                    <img src="./Images/product2.png" alt="">
+
+                    <div class="price-overlay">
+                        <p class="product-title">Price</p>
+                        <div class="product-price"> <s>N</s>250000</div>
+                    </div>
+                </div>
+
+                <p class="shop-item-title">Pixel 4a</p>
+                <button class="btn btn-add"> ADD TO CART</button>
             </div>
 
             <div class="items">
-                <img src="./Images/product3.png" alt="">
-                <p>PS 5</p>
-                <button class="btn"> ADD TO CART</button>
+                <div class="item-img-area">
+                    <img src="./Images/product3.png" alt="">
+
+                    <div class="price-overlay">
+                        <p class="product-title">Price</p>
+                        <div class="product-price"> <s>N</s>600000</div>
+                    </div>
+                </div>
+
+                <p class="shop-item-title">PS 5</p>
+                <button class="btn btn-add"> ADD TO CART</button>
+
             </div>
 
             <div class="items">
-                <img src="./Images/product4.png" alt="">
-                <p>Macbook Air</p>
-                <button class="btn"> ADD TO CART</button>
+                <div class="item-img-area">
+                    <img src="./Images/product4.png" alt="">
+
+                    <div class="price-overlay">
+                        <p class="product-title">Price</p>
+                        <div class="product-price"> <s>N</s>900000</div>
+                    </div>
+                </div>
+
+                <p class="shop-item-title">Macbook Air</p>
+                <button class="btn btn-add"> ADD TO CART</button>
             </div>
 
             <div class="items">
-                <img src="./Images/product5.png" alt="">
-                <p>Apple Watch</p>
-                <button class="btn"> ADD TO CART</button>
+                <div class="item-img-area">
+                    <img src="./Images/product5.png" alt="">
+
+                    <div class="price-overlay">
+                        <p class="product-title">Price</p>
+                        <div class="product-price"> <s>N</s>300000</div>
+                    </div>
+                </div>
+
+                <p class="shop-item-title">Apple Watch</p>
+                <button class="btn btn-add"> ADD TO CART</button>
             </div>
 
             <div class="items">
-                <img src="./Images/product6.png" alt="">
-                <p>Airpods</p>
-                <button class="btn"> ADD TO CART</button>
+                <div class="item-img-area">
+                    <img src="./Images/product6.png" alt="">
+
+                    <div class="price-overlay">
+                        <p class="product-title">Price</p>
+                        <div class="product-price"> <s>N</s>150000</div>
+                    </div>
+                </div>
+
+                <p class="shop-item-title">Airpods</p>
+                <button class="btn btn-add"> ADD TO CART</button>
             </div>
 
         </div>
@@ -133,8 +187,14 @@
 
 
 
-
-
+    <script src="https://js.paystack.co/v1/inline.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./jquery.nice-number.js"></script>
+    <script>
+        $(function () {
+            $('input[type="number"]').niceNumber();           
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 
