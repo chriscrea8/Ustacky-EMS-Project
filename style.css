@@ -406,14 +406,12 @@ button {
 @media screen and (max-width: 425px) {
 
     .hero {
-        height: 100vh;
+        height: 80vh;
         padding: 10px 20px;
     }
 
     .hero .hero-img {
         display: block;
-        align-items: center;
-        justify-content: center;
         width: 100%;
     }
 
@@ -427,6 +425,7 @@ button {
         padding: 0px 0px;
         text-align: left;
         margin-bottom: 5px;
+        width: 100%;
     }
 
     .nav-links {
