@@ -414,11 +414,7 @@ button {
         display: block;
         align-items: center;
         justify-content: center;
-        width: 80%;
-    }
-
-    .nav .nav-links {
-        align-items: flex-start;
+        width: 100%;
     }
 
     .hero-content {
@@ -427,7 +423,7 @@ button {
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         padding: 0px 0px;
         text-align: left;
         margin-bottom: 5px;
