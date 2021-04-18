@@ -17,6 +17,7 @@ body {
 .hero {
     background-color: #ffcd9e;
     padding: 10px 150px 50px 150px;
+    height: 100vh;
 }
 
 .nav {
@@ -403,26 +404,49 @@ button {
 }
 
 @media screen and (max-width: 425px) {
-    .hero .hero-img {
-        display: none;
-    }
 
     .hero {
-        padding: 30px 40px;
+        height: 100vh;
+        padding: 10px 20px;
+    }
+
+    .hero .hero-img {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .nav .nav-links {
+        align-items: flex-start;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding: 0px 0px;
+        text-align: left;
+        margin-bottom: 5px;
     }
 
     .nav-links {
         font-size: .8rem;
     }
 
-    h1 {
-        font-size: 2rem;
-        font-weight: 900;
-        color: #ff7a00;
+    .gadgets {
+        padding: 40px 10px;
+    }
+
+    .gadgets {
+        padding-bottom: 10px;
     }
 
     .about {
-        padding: 30px 40px;
+        padding: 30px 5px;
         font-size: .8rem;
     }
 
@@ -431,7 +455,7 @@ button {
     }
 
     .gadgets h2 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .item-container {
@@ -439,8 +463,12 @@ button {
     }
 
     .items {
-        width: 90%;
+        width: 100%;
         height: auto;
+    }
+
+    .items .btn-add {
+        width: 75%;
     }
 
     .footer {
@@ -455,14 +483,53 @@ button {
     .footer p {
         font-size: .8rem;
     }
+
+    .footer .logo {
+        width: 15%;
+        margin-top: 8px;
+    }
 }
 
 @media screen and (max-width: 375px) {
+    .hero {
+        height: 100vh;
+        padding: 30px 40px;
+    }
+
+    .hero .hero-img {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+    }
     .gadgets {
-        padding: 40px 20px;
+        padding: 40px 10px;
+    }
+
+    .gadgets {
+        padding-bottom: 10px;
     }
 
     h1 {
-        padding: 50px 0px;
+        padding: 10px 0px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .gadgets h2 {
+        font-size: 1.5rem;
+    }
+
+    .items .btn-add {
+        width: 100%;
+    }
+
+    .footer .logo {
+        width: 20%;
     }
 }
